@@ -1,0 +1,140 @@
+.sticky-header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+.content{
+    height: 100vh;
+}
+.simg{
+    height: 100px;
+    border-radius: 10px;
+}
+.homebg{
+    background-image: url(./asset/3780751_77850.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*header starting*/
+.scroll-container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    scrollbar-width: 10px;
+}
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+/*header starting*/
+.nav{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.nav li {
+    position: relative;
+}
+.nav a{
+    white-space: nowrap;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.nav li:hover a {
+    color: #9b50cc;
+}
+.nav-link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #9b50cc;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0s;
+}
+.nav-link:hover:before{
+    visibility: visible;
+    width: 100%;
+}
+
+.button{
+  display: inline-block;
+  transition: transform 0.2s ease-in-out;
+}
+/*header ending*/
+
+/*  mobile sidebar starting*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: whitesmoke;
+}
+.sideBar {
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    background-color: #111827;
+    right: -300px;
+    top: 0;
+    z-index: 100;
+    transition: 0.3s;
+    display: block;
+}
+.sideBar #close {
+    float: right;
+    margin-top: 5px;
+    margin-right: 20px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+.sideBar ul{
+    list-style: none;
+    margin-top: 10vh;
+}
+.sideBar li {
+    font-family: "Raleway", sans-serif;
+    padding: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.sideBar li a {
+    color: white;
+    text-decoration: none;
+    transform: 0.2s !important;
+}
+.sideBar a:hover  {
+    color: #9b50cc;
+}
+#openButton {
+    font-size: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 15px;
+}         
+/*  mobile sidebar ending*/
+
+

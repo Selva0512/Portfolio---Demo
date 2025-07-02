@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./index.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="sticky-header py-5 bg-gray-900 text-white flex justify-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 w-[90%]">
+            <h1 class="text-4xl font-bold py-3 transition-transform duration-300 ease-in-out hover:scale-105 cursor-default">My Portfolio</h1>
+            <div class="head">
+            <nav class="nav lg:flex hidden items-center">
+                <ul class="text-2xl">
+                    <li class="nav-link"><a href="#home">Home</a></li>
+                    <li class="nav-link"><a href="#about">About me</a></li>
+                    <li class="nav-link"><a href="#skills">Skills</a></li>
+                    <li class="nav-link"><a href="#projects">Projects</a></li>
+                    <li class="p-2 text-white border-2 border-spacing-2 rounded-lg
+                     transition duration-300 ease-in-out hover:border-[#9b50cc]"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+
+        <!-- Mobile Sidebar -->
+        <div class="lg:hidden flex justify-center items-center">
+            <ion-icon id="openButton" name="menu-outline" class="flex items-center">
+                <button class="text-white text-center focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </ion-icon>
+            <div class="sideBar" id="sideBar">
+                <a id="close">&times;</a>
+                <ul class="text-2xl">
+                    <li class="nav-link"><a href="#home">Home</a></li>
+                    <li class="nav-link"><a href="#about">About me</a></li>
+                    <li class="nav-link"><a href="#skills">Skills</a></li>
+                    <li class="nav-link"><a href="#projects">Projects</a></li>
+                    <li class="nav-link"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+</header>
+
+
+<main class="bg-gradient-to-tr from-gray-700 to-gray-950">
+      <div id="home" class="content text-white flex justify-center items-center">
+        <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2">
+          <div class="flex flex-col justify-center ml-10 space-y-4">
+            <h2 class="text-5xl font-bold">Hi, I'm Selvakarthik</h2>
+            <p class="">
+              I am a passionate software engineering student eager to learn and create innovative solutions.
+            </p>
+          </div>
+          <div class="flex justify-center items-center">
+            <img src="./asset/IMG-20221205-WA0003.jpg" alt="cover img" class="rounded-3xl h-[70%]" />
+          </div>
+        </div>
+      </div>
+  
+      <div id="about" class="content text-white flex justify-center items-center">
+        <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2">
+          <div class="flex justify-center items-center">
+            <img src="./asset/IMG-20220606-WA0005.jpg" alt="img" class="rounded-3xl w-80" />
+          </div>
+          <div class="flex flex-col justify-center m-5 space-y-4">
+            <h2 class="text-4xl font-bold">About Me</h2>
+            <p class="text-xl">
+                I am a dedicated professional, I assure you to give every work the maximum effort.
+                I approach challenges with dedication and passion, inspired by a desire for achievement. My objective 
+                is to use my abilities and knowledge to their fullest potential in order deliver exceptional outcomes.
+                I carry out my best in circumstances that respect innovation and hard work, and I always want to have
+                a beneficial impact in the things I accomplish.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="skills" class="content text-white flex justify-center items-startS">
+        <div class="w-[90%] mx-auto">
+          <h2 class="text-3xl font-bold ml-5 py-8">Skills</h2>
+
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-10">
+            <div class="flex flex-col justify-center items-center space-y-4">
+              <img src="../Assets/html.png" alt="html img" class="simg">
+              <h1 class="text-2xl">HTML</h1>
+            </div>
+            <div class="flex flex-col justify-center items-center space-y-4">
+              <img src="../Assets/css1.jpg" alt="css img" class="simg">
+              <h1 class="text-2xl">CSS</h1>
+            </div>
+            <div class="flex flex-col justify-center items-center space-y-4">
+              <img src="../Assets/js.jpg" alt="js img" class="simg">
+              <h1 class="text-2xl">JavaScript</h1>
+            </div>
+            <div class="flex flex-col justify-center items-center space-y-4">
+              <img src="../Assets/python.jpeg" alt="python img" class="simg">
+              <h1 class="text-2xl">Python</h1>
+            </div>
+            <!-- Add other skill items similarly -->
+          </div>
+        </div>
+      </div>
+  
+      <div id="projects" class="content text-white flex justify-center items-startS">
+        <div class="w-[90%] mx-auto">
+          <h2 class="text-3xl font-bold ml-5 py-8">Projects</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4" id="projectsContainer">
+            <!-- Projects will be injected here -->
+          </div>
+        </div>
+      </div>
+  </main>
+
+  <footer class="bg-gray-900 text-white p-4">
+    <div id="contact" class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row md:justify-between">
+
+            <!-- Quick Links -->
+            <div class="mb-6 md:mb-0 md:w-1/4">
+                <h2 class="text-2xl font-bold mb-4">Quick change</h2>
+                <ul class="space-y-2">
+                    <li><a href="#home" class="text-blue-400 hover:underline">Home</a></li>
+                    <li><a href="#about" class="text-blue-400 hover:underline">About Us</a></li>
+                    <li><a href="#skills" class="text-blue-400 hover:underline">Skills</a></li>
+                    <li><a href="#projects" class="text-blue-400 hover:underline">Projects</a></li>
+                    <li><a href="#contact" class="text-blue-400 hover:underline">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- gif image -->
+            <div class="mb-6 md:mb-0 md:w-1/4">
+                <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="md:w-2/4">
+                <h2 class="text-2xl font-bold mb-4">Send me a Message</h2>
+                <form id="contactForm" class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium mb-2">Name</label>
+                        <input type="text" id="name" name="name" required class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                        <input type="email" id="email" name="email" required class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4" required class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    </div>
+                    <button type="submit" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Submit</button>
+                </form>
+                <div id="formResponse" class="mt-4"></div>
+            </div>
+        </div>
+    </div>
+  </footer>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
