@@ -15,7 +15,7 @@ A responsive and interactive personal portfolio website built using HTML, Tailwi
 
 🎨 Dark/Light mode toggle (optional if added)
 
-#Tech Stack
+# Tech Stack
 HTML5 – Semantic and structured content
 
 Tailwind CSS – Utility-first styling framework
