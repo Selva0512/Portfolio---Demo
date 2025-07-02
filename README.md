@@ -1,7 +1,7 @@
-📄 Portfolio Website
+📄 #Portfolio Website
 A responsive and interactive personal portfolio website built using HTML, Tailwind CSS, and JavaScript. This project showcases my web development skills and includes sections like About, Skills, Projects, and Contact.
 
-💡 Features
+💡 #Features
 ⚡ Modern UI with Tailwind CSS
 
 📱 Fully responsive design for mobile and desktop
@@ -14,7 +14,7 @@ A responsive and interactive personal portfolio website built using HTML, Tailwi
 
 🎨 Dark/Light mode toggle (optional if added)
 
-🛠️ Tech Stack
+🛠️ #Tech Stack
 HTML5 – Semantic and structured content
 
 Tailwind CSS – Utility-first styling framework
